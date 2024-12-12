@@ -1,6 +1,6 @@
-import { CustomInputProps } from "../../models/CustomInputPropsModel";
+import { ICustomInputPropsModel } from "../../models/ICustomInputPropsModel";
 
-function CustomInput({ onValueChange }: CustomInputProps) {
+function CustomInput({ onValueChange }: ICustomInputPropsModel) {
 const handleChange = (value: string) => {
         onValueChange(value);
     }
