@@ -1,6 +1,4 @@
-interface CustomInputProps {
-    onValueChange: (value: string) => void; // Define prop type for the callback
-}
+import { CustomInputProps } from "../../models/CustomInputPropsModel";
 
 function CustomInput({ onValueChange }: CustomInputProps) {
 const handleChange = (value: string) => {
