@@ -6,8 +6,8 @@ const handleChange = (value: string) => {
     }
 
     const content = <>
-    <label>{label}</label>
-    <input onChange={(val) => handleChange(val.target.value)}></input>
+        <label>{label}</label>
+        <input onChange={(val) => handleChange(val.target.value)}></input>
     </>
 
     return content;
