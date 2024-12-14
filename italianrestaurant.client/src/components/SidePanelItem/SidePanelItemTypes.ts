@@ -1,5 +1,6 @@
 export interface ISidePanelItemProps {
-    text: string;
+    title: string;
     src: string;
     icon: string;
+    isToggled: boolean;
 }

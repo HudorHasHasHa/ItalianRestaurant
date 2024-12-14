@@ -1,0 +1,27 @@
+.side-panel {
+    /* ... other styles for the side panel ... */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* Adjust width as needed */
+    height: 100vh;
+    background-color: #f0f0f0;
+    transform: translateX(-100%); /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-panel.open {
+    transform: translateX(0); /* Show the panel */
+}
+
+.toggle-btn {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    position: absolute;
+}
+
+.slideButton {
+    transform: translateX(300px);
+}

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import SidePanelItem from '../SidePanelItem/SidePanelItem';
 
 export default function SidePanel() {
@@ -13,11 +14,35 @@ export default function SidePanel() {
             title: 'User',
         },
     ];
+
+    const [isToggled, setisToggled] = useState(false);
+
+    const toggleSidePanel = () => setisToggled(!isToggled);
+
     return (
-        <nav className="d-flex">
-            {mockItems.map((x) => (
-                <SidePanelItem src={x.src} icon={x.icon} title={x.title} />
-            ))}
-        </nav>
+        <div>
+            <div
+                className={`toggle-btn ${isToggled ? 'slideButton' : ''}`}
+                onClick={toggleSidePanel}
+            >
+                <img
+                    style={{ width: '40px', height: '40px' }}
+                    src="/hamburger-svgrepo-com.svg"
+                    alt="Toggle Menu"
+                />
+            </div>
+
+            <div className={`side-panel ${isToggled ? 'open' : ''}`}>
+                {mockItems.map((item, index) => (
+                    <SidePanelItem
+                        key={index}
+                        src={item.src}
+                        icon={item.icon}
+                        title={item.title}
+                        isToggled={isToggled}
+                    />
+                ))}
+            </div>
+        </div>
     );
 }
