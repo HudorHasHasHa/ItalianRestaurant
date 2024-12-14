@@ -1,5 +1,5 @@
 import NavbarLink from '../NavbarLink.tsx/NavbarLink';
-
+//keeping navbar to move it into components library that will be created later on
 export default function Navbar() {
     const mockItems = [
         {
