@@ -1,6 +1,6 @@
-import { INavbarLinkProps } from './NavbarLinkTypes';
+import { ISidePanelItemProps } from './SidePanelItemTypes';
 
-export default function NavbarLink({ text, src }: INavbarLinkProps) {
+export default function SidePanelItem({ text, src }: ISidePanelItemProps) {
     return (
         <div>
             <a className="mx-3" href={src}>

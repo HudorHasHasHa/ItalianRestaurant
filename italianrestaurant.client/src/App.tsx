@@ -2,9 +2,11 @@ import './App.css';
 import MainPage from './Views/MainPage/MainPage';
 
 function App() {
-    return  <>
-        <MainPage/>
-    </>
+    return (
+        <>
+            <MainPage />
+        </>
+    );
 }
 
 export default App;
