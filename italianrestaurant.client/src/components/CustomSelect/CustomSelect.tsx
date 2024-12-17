@@ -1,14 +1,5 @@
 import { useState } from 'react';
-
-export interface ISelectItems {
-    value: string | number;
-    text: string;
-}
-
-export interface ICustomSelectPropsModel {
-    label: string;
-    items: ISelectItems[];
-}
+import { ICustomSelectPropsModel } from './CustomSelectTypes';
 
 export default function CustomSelect({
     label,
