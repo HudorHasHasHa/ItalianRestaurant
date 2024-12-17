@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import CustomInput from '../../components/CustomInput/CustonInput';
 import SidePanel from '../../components/SidePanel/SidePanel';
-import CustomSelect, {
-    ISelectItems,
-} from '../../components/CustomSelect/CustomSelect';
+import { ISelectItems } from '../../components/CustomSelect/CustomSelectTypes';
+import CustomSelect from '../../components/CustomSelect/CustomSelect';
 
 export default function MainPage() {
     const [inp1, changeInp1] = useState('');
