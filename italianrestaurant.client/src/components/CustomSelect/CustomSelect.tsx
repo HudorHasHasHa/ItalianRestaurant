@@ -23,15 +23,23 @@ export default function CustomSelect({
     };
 
     return (
-        <>
-            <label>{label}</label>
-            <select value={selectedOption} onChange={handleChange}>
+        <div className="d-flex flex-column">
+            <label htmlFor={label}>{label}</label>
+            <select
+                id={label}
+                value={selectedOption ?? ''}
+                onChange={handleChange}
+                className="form-control"
+            >
+                <option value="" disabled>
+                    - select -
+                </option>
                 {items.map((item, index) => (
                     <option key={index} value={item.value}>
                         {item.text}
                     </option>
                 ))}
             </select>
-        </>
+        </div>
     );
 }
