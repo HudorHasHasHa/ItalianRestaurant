@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\italianrestaurant.client\italianrestaurant.client.esproj">
+    <ProjectReference Include="..\italianrestaurant.client\ReactComponents.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

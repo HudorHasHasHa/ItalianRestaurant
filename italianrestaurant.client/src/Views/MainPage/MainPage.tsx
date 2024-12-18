@@ -4,6 +4,8 @@ import SidePanel from '../../components/SidePanel/SidePanel';
 import { ISelectItems } from '../../components/CustomSelect/CustomSelectTypes';
 import CustomSelect from '../../components/CustomSelect/CustomSelect';
 import CustomRadioGroup from '../../components/CustomRadioGroup/CustomRadioGroup';
+import CustomList from '../../components/CustomList/CustomList';
+import { customListItems } from '../../components/CustomListItem/CustomListItemTypes';
 
 export default function MainPage() {
     const [inp1, changeInp1] = useState('');
@@ -69,6 +71,8 @@ export default function MainPage() {
             />
 
             {typeOfSomething}
+
+            <CustomList listItems={customListItems} />
         </>
     );
 
