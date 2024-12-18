@@ -49,7 +49,7 @@ export default function MainPage() {
     };
 
     const content = (
-        <>
+        <div style={{ backgroundColor: 'gray', height: '100vh' }}>
             <SidePanel />
             <CustomInput label="test" onValueChange={changeInp1} />
             <span>{inp1}</span>
@@ -73,7 +73,7 @@ export default function MainPage() {
             {typeOfSomething}
 
             <CustomList listItems={customListItems} />
-        </>
+        </div>
     );
 
     return content;
