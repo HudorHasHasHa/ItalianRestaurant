@@ -1,9 +1,9 @@
-export interface ICustomListItemProps {
+export interface CustomListItemProps {
     text: string;
     classes: string;
 }
 
-export const customListItems: ICustomListItemProps[] = [
+export const customListItems: CustomListItemProps[] = [
     { text: 'Home', classes: '' },
     { text: 'About Us', classes: '' },
     { text: 'Services', classes: '' },

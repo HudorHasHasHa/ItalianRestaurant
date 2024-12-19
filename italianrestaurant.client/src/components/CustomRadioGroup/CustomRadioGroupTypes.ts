@@ -1,7 +1,7 @@
-import { ICustomRadioOptionsModel } from '../CustomRadio/CustomRadioTypes';
+import { CustomRadioOptions } from '../CustomRadio/CustomRadioTypes';
 
-export interface ICustomRadioGroupPropsModel {
+export interface CustomRadioGroupProps {
     label: string;
-    groupOptions: ICustomRadioOptionsModel[];
+    groupOptions: CustomRadioOptions[];
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }

@@ -1,10 +1,7 @@
 import { useState } from 'react';
-import { ICustomSelectPropsModel } from './CustomSelectTypes';
+import { CustomSelectProps } from './CustomSelectTypes';
 
-export default function CustomSelect({
-    label,
-    items,
-}: ICustomSelectPropsModel) {
+export default function CustomSelect({ label, items }: CustomSelectProps) {
     const [selectedOption, setSelectedOption] = useState<
         string | number | undefined
     >(undefined);

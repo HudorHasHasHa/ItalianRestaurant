@@ -1,4 +1,4 @@
-export interface ISidePanelItemProps {
+export interface SidePanelItemProps {
     title: string;
     src: string;
     icon: string;

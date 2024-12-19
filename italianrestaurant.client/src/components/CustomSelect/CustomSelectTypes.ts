@@ -1,9 +1,9 @@
-export interface ISelectItems {
+export interface SelectItems {
     value: string | number;
     text: string;
 }
 
-export interface ICustomSelectPropsModel {
+export interface CustomSelectProps {
     label: string;
-    items: ISelectItems[];
+    items: SelectItems[];
 }

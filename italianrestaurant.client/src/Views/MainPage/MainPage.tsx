@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CustomInput from '../../components/CustomInput/CustonInput';
 import SidePanel from '../../components/SidePanel/SidePanel';
-import { ISelectItems } from '../../components/CustomSelect/CustomSelectTypes';
+import { SelectItems } from '../../components/CustomSelect/CustomSelectTypes';
 import CustomSelect from '../../components/CustomSelect/CustomSelect';
 import CustomRadioGroup from '../../components/CustomRadioGroup/CustomRadioGroup';
 import CustomList from '../../components/CustomList/CustomList';
@@ -9,7 +9,7 @@ import { customListItems } from '../../components/CustomListItem/CustomListItemT
 
 export default function MainPage() {
     const [inp1, changeInp1] = useState('');
-    const mockedItems: ISelectItems[] = [
+    const mockedItems: SelectItems[] = [
         { value: 1, text: 'Option 1' },
         { value: 2, text: 'Option 2' },
         { value: 3, text: 'Option 3' },

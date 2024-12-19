@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import SidePanelItem from '../SidePanelItem/SidePanelItem';
+import { SidePanelProps } from './SidePanelTypes';
 
-export default function SidePanel() {
+export default function SidePanel({ passedWidth }: SidePanelProps) {
     const mockItems = [
         {
             src: '/home',
@@ -32,7 +33,10 @@ export default function SidePanel() {
                 />
             </div>
 
-            <div className={`side-panel ${isToggled ? 'open' : ''}`}>
+            <div
+                className={`side-panel ${isToggled ? 'open' : ''}`}
+                style={passedWidth ? { width: `${passedWidth}px` } : {}}
+            >
                 {mockItems.map((item, index) => (
                     <SidePanelItem
                         key={index}

@@ -1,11 +1,11 @@
-import { ICustomRadioPropsModel } from './CustomRadioTypes';
+import { CustomRadioProps } from './CustomRadioTypes';
 
 export default function CustomRadio({
     label,
     value,
     checked,
     onChange,
-}: ICustomRadioPropsModel) {
+}: CustomRadioProps) {
     return (
         <div className="form-check">
             <input

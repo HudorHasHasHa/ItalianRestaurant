@@ -1,6 +1,6 @@
-import { ICustomListItemProps } from '../CustomListItem/CustomListItemTypes';
+import { CustomListItemProps } from '../CustomListItem/CustomListItemTypes';
 
-export interface ICustomListProps {
-    listItems: ICustomListItemProps[];
+export interface CustomListProps {
+    listItems: CustomListItemProps[];
     decoration?: boolean;
 }

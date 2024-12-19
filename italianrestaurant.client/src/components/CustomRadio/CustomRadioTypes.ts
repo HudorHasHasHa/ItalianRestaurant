@@ -1,8 +1,8 @@
-export interface ICustomRadioPropsModel extends ICustomRadioOptionsModel {
+export interface CustomRadioProps extends CustomRadioOptions {
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export interface ICustomRadioOptionsModel {
+export interface CustomRadioOptions {
     label: string;
     value: number;
     checked: boolean | undefined;

@@ -1,10 +1,10 @@
 import CustomListItem from '../CustomListItem/CustomListItem';
-import { ICustomListProps } from './CustomListTypes';
+import { CustomListProps } from './CustomListTypes';
 
 export default function CustomList({
     listItems,
     decoration = true,
-}: ICustomListProps) {
+}: CustomListProps) {
     return (
         <ul className={`text-start${decoration ? '' : ' list-unstyled'}`}>
             {listItems.map((item, index) => (

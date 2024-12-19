@@ -1,11 +1,11 @@
 import CustomRadio from '../CustomRadio/CustomRadio';
-import { ICustomRadioGroupPropsModel } from './CustomRadioGroupTypes';
+import { CustomRadioGroupProps } from './CustomRadioGroupTypes';
 
 export default function CustomRadioGroup({
     label,
     groupOptions,
     onChange,
-}: ICustomRadioGroupPropsModel) {
+}: CustomRadioGroupProps) {
     return (
         <div>
             <label>{label}</label>
